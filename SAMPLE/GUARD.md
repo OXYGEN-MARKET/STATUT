@@ -1,290 +1,172 @@
-![Oxygen Logo](/IDENTIFY/logotype3.png)
+## IMPORTANT: [Ruby 2.1 is officially outdated and unsupported!](https://www.ruby-lang.org/en/news/2016/03/30/ruby-2-1-9-released/) Please upgrade to Ruby >=2.3 or >=2.2.6 before installing Guard!
 
+### (To install for older versions, update Bundler at least 1.12: `gem update bundler` and Bundler should correctly resolve to earlier gems for your given Ruby version).
 
----
+:exclamation: Guard is currently accepting more maintainers. Please [read this](https://github.com/guard/guard/wiki/Maintainers) if you're interested in joining the team.
 
-# Содержание репозитория
+Guard
+=====
 
-№ | Каталог | Описание
------------- | ------------- | -------------
-1 | IDENTIFY | Логотипы и дизайн гайдлайны
-2 | ORGSCHEMA | Оргсхема стартапа OXYGEN
-3 | STATUT | Основные статутный документы
+[![Gem Version](https://img.shields.io/gem/v/guard.svg?style=flat)](https://rubygems.org/gems/guard) [![Build Status](https://travis-ci.org/guard/guard.svg)](https://travis-ci.org/guard/guard) [![Dependency Status](https://gemnasium.com/guard/guard.svg)](https://gemnasium.com/guard/guard) [![Code Climate](https://codeclimate.com/github/guard/guard/badges/gpa.svg)](https://codeclimate.com/github/guard/guard) [![Test Coverage](https://codeclimate.com/github/guard/guard/badges/coverage.svg)](https://codeclimate.com/github/guard/guard) [![Inline docs](http://inch-ci.org/github/guard/guard.svg)](http://inch-ci.org/github/guard/guard)
 
+<img src="http://f.cl.ly/items/0A0M3W2x3I1P450z341U/guard-Icon.png" alt="Guard Icon" align="right" />
+Guard automates various tasks by running custom rules whenever file or directories are modified.
 
-# Список
-![one](/IDENTIFY/flickr/fl_01.png) Позиция №1
+It's frequently used by software developers, web designers, writers and other specialists to avoid mundane, repetitive actions and commands such as "relaunching" tools after changing source files or configurations.
 
-![two](/IDENTIFY/flickr/fl_02.png) Позиция №2
+Common use cases include: an IDE replacement, web development tools, designing "smart" and "responsive" build systems/workflows, automating various project tasks and installing/monitoring various system services.
 
-![tree](/IDENTIFY/flickr/fl_03.png) Позиция №3
+For a full categorized list of known Guard plugins, look here: https://github.com/guard/guard/wiki/Guard-Plugins
 
-![four](/IDENTIFY/flickr/fl_04.png) Позиция №4
+If you have
+any questions about Guard or want to share some information with the Guard community, please go to one of
+the following places:
 
-![five](/IDENTIFY/flickr/fl_05.png) Позиция №5
+* [Guard Wiki](https://github.com/guard/guard/wiki)
+* [Google+ community](https://plus.google.com/communities/110022199336250745477).
+* [Google group](http://groups.google.com/group/guard-dev).
+* [StackOverflow](http://stackoverflow.com/questions/tagged/guard).
+* IRC channel `#guard` (irc.freenode.net) for chatting.
 
+Before you file an issue, make sure you have read the _[known issues](#issues)_ and _[file an issue](#file-an-issue)_ sections that contains some important information.
 
+#### Features
 
+* File system changes handled by our awesome [Listen](https://github.com/guard/listen) gem.
+* Support for visual system notifications.
+* Huge eco-system with [more than 220](https://rubygems.org/search?query=guard-) Guard plugins.
+* Tested against Ruby 2.2.6, 2.3.3, 2.4.0, JRuby & Rubinius.
 
+#### Screencast
 
+Two nice screencasts are available to help you get started:
 
- № | Сервис | Описание
- ------------ | ------------ | ------------
- ![Trello](/IDENTIFY/iconlib/Trello_Color.png) | [Trello](https://trello.com) | Сервис для управления проектами по японской методологии Kanban
- ![Trello](/IDENTIFY/iconlib/Trello_Color.png) | [Trello](https://trello.com) | Доска Agile
- 
+* [Guard](http://railscasts.com/episodes/264-guard) on RailsCast.
+* [Guard is Your Best Friend](http://net.tutsplus.com/tutorials/tools-and-tips/guard-is-your-best-friend) on Net Tuts+.
 
+Installation
+------------
 
+The simplest way to install Guard is to use [Bundler](http://bundler.io).
 
+Add Guard (and any other dependencies) to a `Gemfile` in your project’s root:
 
-
-
-
-
-Уставные и бизнес документы OXYGEN-MARKET.
-
-
-- Digital Concept
-- Marketing Plan
-
-Цель долгосрочная
-
-Цель краткосрочная
-
-Срок 
-
-Процесс
-
-Интерес
-
-
-# ТЕКСТ
-It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)
-
-
-
-# СПИСКИ
-Sometimes you want numbered lists (нумерованный):
-
-1. One
-2. Two
-3. Three
-
-Sometimes you want bullet points (маркированный):
-
-* Start a line with a star
-* Profit!
-
-Alternatively,
-
-- Dashes work just as well
-- And if you have sub points, put two spaces before the dash or star:
-  - Like this
-  - And this
-
-# ИЗОБРАЖЕНИЯ
-If you want to embed images, this is how you do it:
-
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-
-
-
-# ЗАГОЛОВКИ И ЦЫТАТЫ
-# Structured documents
-
-Sometimes it's useful to have different levels of headings to structure your documents. Start lines with a `#` to create headings. Multiple `##` in a row denote smaller heading sizes.
-
-### This is a third-tier heading
-
-You can use one `#` all the way up to `######` six for different heading sizes.
-
-If you'd like to quote someone, use the > character before the line:
-
-> Coffee. The finest organic suspension ever devised... I beat the Borg with it.
-> - Captain Janeway
-
-
-
-# КОД
-Есть много различных способов коды стиля с уценкой GitHub в. Если у вас есть встроенные блоки кода, завернуть их в обратных кавычках: `var example = true`. Если у вас есть длинный блок кода, вы можете отступ с четырьмя пробелов:
-
-    if (isAwesome){
-      return true
-    }
-
-
-GitHub также поддерживает то, что называется код ограждение, что позволяет несколько строк без отступа:
-
-```
-if (isAwesome){
-  return true
-}
+```ruby
+group :development do
+  gem 'guard'
+end
 ```
 
-И если вы хотите использовать подсветку синтаксиса, включают в себя язык:
+then install it by running Bundler:
 
-```javascript
-if (isAwesome){
-  return true
-}
+```bash
+$ bundle
 ```
 
-# ДОПОЛНИТЕЛЬНО
-GitHub поддерживает множество дополнительных в Markdown, которые помогут вам ссылку и ссылка на человек. Если вы когда-либо хотите, чтобы направить свой комментарий на кого-то, вы можете префикс их имя с символом @: Эй @kneath - любовь вашего свитера!
+Generate an empty `Guardfile` with:
 
-Но я должен признать, что задачи списки мои любимые:
-
- - [x] Это полный пункт
- - [] Это не полный пункт
-
-
-
-При включении списка задач в первом комментарии какого-либо вопроса, вы увидите полезный индикатор в списке вопросов. Он работает в пенальной Просьбе тоже!
-
-И, конечно же смайлики! :sparkles: :camel: :boom:
-
-
-# Syntax guide
-
-
-
-# Headers
-
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag
-
-
-# Emphasis
-
-*This text will be italic*
-_This will also be italic_
-
-**This text will be bold**
-__This will also be bold__
-
-_You **can** combine them_
-
-# Lists
-
-## Unordered
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
-
-## Ordered
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
-
-
-
-# Images
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
-
-
-
-# Links
-http://github.com - automatic!
-[GitHub](http://github.com)
-
-
-
-
-# Blockquotes
-As Kanye West said:
-
-> We're living the future so
-> the present is our past.
-
-
-
-# Inline code
-I think you should use an
-`<addr>` element here instead.
-
-
-
-
-
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
+```bash
+$ bundle exec guard init
 ```
 
+Run Guard through Bundler with:
+
+```bash
+$ bundle exec guard
+```
+
+If you are on Mac OS X and have problems with either Guard not reacting to file
+changes or Pry behaving strange, then you should [add proper Readline support
+to Ruby on Mac OS
+X](https://github.com/guard/guard/wiki/Add-Readline-support-to-Ruby-on-Mac-OS-X).
 
 
-    function fancyAlert(arg) {
-      if(arg) {
-        $.facebox({div:'#foo'})
-      }
-    }
+#### Avoiding gem/dependency problems
+
+**It's important that you always run Guard through Bundler to avoid errors.**
+
+If you're getting sick of typing `bundle exec` all the time, try one of the following:
+
+* (Recommended) Running `bundle binstub guard` will create `bin/guard` in your
+  project, which means running `bin/guard` (tab completion will save you a key
+  stroke or two) will have the exact same result as `bundle exec guard`.
+
+* Or, for RubyGems >= 2.2.0 (at least, though the more recent the better),
+  simply set the `RUBYGEMS_GEMDEPS` environment variable to `-` (for autodetecting
+  the Gemfile in the current or parent directories) or set it to the path of your Gemfile.
+
+(To upgrade RubyGems from RVM, use the `rvm rubygems` command).
+
+*NOTE: this Rubygems feature is still under development still lacks many features of bundler*
+
+* Or, for RubyGems < 2.2.0 check out the [Rubygems Bundler](https://github.com/rvm/rubygems-bundler).
+
+#### Add Guard plugins
+
+Guard is now ready to use and you should add some Guard plugins for your specific use. Start exploring the many Guard
+plugins available by browsing the [Guard organization](https://github.com/guard) on GitHub or by searching for `guard-`
+on [RubyGems](https://rubygems.org/search?utf8=%E2%9C%93&query=guard-).
+
+When you have found a Guard plugin of your interest, add it to your `Gemfile`:
+
+```ruby
+group :development do
+  gem '<guard-plugin-name>'
+end
+```
+
+See the init section of the Guard usage below to see how to install the supplied plugin template that you can install and
+to suit your needs.
+
+Usage
+-----
+
+Guard is run from the command line. Please open your terminal and go to your project work directory.
+
+Look here for a full [list of Guard commands](https://github.com/guard/guard/wiki/List-of-Guard-Commands)
+
+### Start
+
+Just launch Guard inside your Ruby or Rails project with:
+
+```bash
+$ bundle exec guard
+```
+
+Guard will look for a `Guardfile` in your current directory. If it does not find one, it will look in your `$HOME`
+directory for a `.Guardfile`.
+
+Please look here to see all the [command line options for Guard](https://github.com/guard/guard/wiki/Command-line-options-for-Guard)
+
+Interactions
+------------
+Please read how to [interact with Guard](https://github.com/guard/guard/wiki/Interacting-with-Guard) on the console and which [signals](https://github.com/guard/guard/wiki/Interacting-with-Guard#guard-signals) Guard accepts
 
 
+Guardfile DSL
+-------------
+For details on extending your `Guardfile` look at [Guardfile examples](https://github.com/guard/guard/wiki/Guardfile-examples) or look at a list of commands [Guardfile-DSL / Configuring-Guard](https://github.com/guard/guard/wiki/Guardfile-DSL---Configuring-Guard)
 
-def foo():
-    if not bar:
-        return True
+Issues
+------
 
+Before reporting a problem, please read how to [File an issue](https://github.com/guard/guard/blob/master/CONTRIBUTING.md#file-an-issue).
 
+Development / Contributing
+--------------------------
 
+See the [Contributing Guide](https://github.com/guard/guard/blob/master/CONTRIBUTING.md#development).
 
+#### Author
 
-# Task Lists
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
+[Thibaud Guillaume-Gentil](https://github.com/thibaudgg) ([@thibaudgg](https://twitter.com/thibaudgg))
 
+#### Core Team
 
+* R.I.P. :broken_heart: [Michael Kessler](https://github.com/netzpirat) ([flinkfinger.com](http://www.flinkfinger.com)).
+* [Rémy Coutable](https://github.com/rymai).
+* [Thibaud Guillaume-Gentil](https://github.com/thibaudgg) ([@thibaudgg](https://twitter.com/thibaudgg), [thibaud.gg](http://thibaud.gg/)).
 
-# Tables
+#### Contributors
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-
-
-
-
-
-
-16c999e8c71134401a78d4d46435517b2271d6ac
-mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
-mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
-
-
-
-#1
-mojombo#1
-mojombo/github-flavored-markdown#1
-
-
-
-~~this~~
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[https://github.com/guard/guard/graphs/contributors](https://github.com/guard/guard/graphs/contributors)
