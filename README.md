@@ -16,8 +16,8 @@
 
  № | Сервис | Описание
  ------------ | ------------ | ------------
- Icon | [Trello](https://trello.com) | Сервис для управления проектами по японской методологии Kanban
- Icon | [Trello](https://trello.com) | Доска Agile
+ ![Trello](/IDENTIFY/iconlib/Trello_Color.png) | [Trello](https://trello.com) | Сервис для управления проектами по японской методологии Kanban
+ ![Trello](/IDENTIFY/iconlib/Trello_Color.png) | [Trello](https://trello.com) | Доска Agile
  
 
 
