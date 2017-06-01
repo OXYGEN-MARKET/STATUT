@@ -1,7 +1,7 @@
-![Oxygen Logo](/IDENTYFY/logo1.png)
+![Oxygen Logo](/IDENTIFY/logotype.png)
 
 
-![Oxygen Logo](https://github.com/OXYGEN-MARKET/STATUT/blob/master/IDENTYFY/logo1.png)
+![Oxygen Logo](https://github.com/OXYGEN-MARKET/STATUT/blob/master/IDENTIFY/logo1.png)
 
 
 
