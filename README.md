@@ -1,9 +1,7 @@
-![Oxygen Logo](/IDENTIFY/logotype.png)
+![Oxygen Logo](/IDENTIFY/logotype2.png)
 
 
-![Oxygen Logo](https://github.com/OXYGEN-MARKET/STATUT/blob/master/IDENTIFY/logo1.png)
-
-
+---
 
 # STATUT
 Уставные и бизнес документы OXYGEN-MARKET.
@@ -15,13 +13,13 @@ It's very easy to make some words **bold** and other words *italic* with Markdow
 
 
 # СПИСКИ
-Sometimes you want numbered lists:
+Sometimes you want numbered lists (нумерованный):
 
 1. One
 2. Two
 3. Three
 
-Sometimes you want bullet points:
+Sometimes you want bullet points (маркированный):
 
 * Start a line with a star
 * Profit!
