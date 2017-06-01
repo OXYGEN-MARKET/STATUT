@@ -1,4 +1,4 @@
-![Oxygen Logo](/IDENTIFY/logotype2.png)
+![Oxygen Logo](/IDENTIFY/logotype3.png)
 
 
 ---
@@ -10,6 +10,20 @@
 1 | IDENTIFY | Логотипы и дизайн гайдлайны
 2 | ORGSCHEMA | Оргсхема стартапа OXYGEN
 3 | STATUT | Основные статутный документы
+
+
+# Список
+![one](/IDENTIFY/flickr/fl_01.png) Позиция №1
+
+![two](/IDENTIFY/flickr/fl_02.png) Позиция №2
+
+![tree](/IDENTIFY/flickr/fl_03.png) Позиция №3
+
+![four](/IDENTIFY/flickr/fl_04.png) Позиция №4
+
+![five](/IDENTIFY/flickr/fl_05.png) Позиция №5
+
+
 
 
 
